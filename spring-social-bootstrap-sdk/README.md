@@ -38,11 +38,11 @@ testApi.testOperations().nextPage(currentPage);
 // Configuring settings post-initialization
 testApi.configureSettings(settings).testOperations().get(testBaseApiResource.getId());
 
-// Reading the audit log
-testApi.auditLogOperations().query().get(0)
+// Reading the HTTP Archive (HAR) log of entries (HTTP requests)
+AlfHar alfHar = testApi.harOperations().query();
 
-// Replaying the audit log; 30 seconds between each request
-testApi.replayOperations.replay(auditLogResourcesRequested, new Interval.FixedInterval(30));
+// Replaying the HAR log; 30 seconds between each request
+testApi.replayOperations.replay(alfHar, new Interval.FixedInterval(30));
 
 ```
 

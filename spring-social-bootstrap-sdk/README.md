@@ -67,9 +67,9 @@ Spring's `RestTemplate` provides the synchronous client-side HTTP access. `Abstr
 
 The project provides hierarchical abstract implementations of `BaseApiResourceOperations` that provide basic-, query-, and CRUD-type API operations:
 
-* `AbstractBaseApiResourceTemplate` (uses a provided `RestTemplate` to execute queries, configures the resource API URI template, and can also store the last response received),
+* `AbstractBaseApiResourceTemplate` (uses a provided `RestTemplate` to execute queries, configures the resource API URI template, and can provide a builder pattern for constructing query URLs),
 
-* `AbstractBaseApiResourceQueryTemplate` (adds default or custom query capabilities, a builder pattern for queries, and pagination navigation)
+* `AbstractBaseApiResourceQueryTemplate` (adds default or custom query capabilities)
 
 * `AbstractBaseApiResourceCRUDTemplate` (adds CRUD-style capabilities)
 

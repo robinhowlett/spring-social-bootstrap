@@ -1,0 +1,31 @@
+{
+    "content": [
+		{
+            "id": "9101112",
+		    "name": "Sample 3",
+		    "createDate": "2014-07-01T00:00:00.000Z",
+		    "active": true
+        },
+        {
+        	"id": "13141516",
+		    "name": "Sample 4",
+		    "createDate": "2014-07-01T00:00:00.000Z",
+		    "active": true
+        }
+    ],
+    "firstPage": true,
+    "lastPage": true,
+    "number": 1,
+    "numberOfElements": 2,
+    "size": 25,
+    "sort": [
+        {
+            "ascending": true,
+            "direction": "ASC",
+            "ignoreCase": false,
+            "property": "name"
+        }
+    ],
+    "totalElements": 2,
+    "totalPages": 1
+}

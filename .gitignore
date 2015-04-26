@@ -1,0 +1,13 @@
+/*
+!src
+!src/*
+!src/main
+.DS_Store
+!pom.xml
+!README.md
+!.gitignore
+!bootstrap-shell
+!har-*
+!spring-social-bootstrap*
+!.travis.yml
+!deploy_key.enc

@@ -1,0 +1,25 @@
+CREATE TABLE `har` (
+  `uid` int(11) NOT NULL AUTO_INCREMENT,
+  `user` varchar(50) DEFAULT NULL,
+  `provider` varchar(50) NOT NULL,
+  `ts` bigint(10) NOT NULL,
+  `method` varchar(7) NOT NULL,
+  `scheme` varchar(20) NOT NULL,
+  `hostname` varchar(2047) NOT NULL,
+  `path` varchar(2047) DEFAULT NULL,
+  `port` int(8) DEFAULT NULL,
+  `query` varchar(2047) DEFAULT NULL,
+  `resp_code` int(4) DEFAULT NULL,
+  `resp_reason` varchar(50) DEFAULT NULL,
+  `resp_time` int(10) DEFAULT NULL,
+  `request` mediumtext,
+  `response` mediumtext,
+  `pageref` varchar(50),
+  `cache` text,
+  `timings` text,
+  `server_ip` varchar(20),
+  `client_ip` varchar(20),
+  `connection` varchar(50),
+  `comment` varchar(2047)
+  PRIMARY KEY (`uid`)
+);

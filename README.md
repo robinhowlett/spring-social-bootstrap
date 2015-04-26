@@ -1,0 +1,7 @@
+Project | Description |
+:------------: | ------------- |
+![Spring Social Bootstrap SDK](http://i.imgur.com/asX8yGM.jpg) | **[Spring Social Bootstrap SDK](https://github.com/robinhowlett/spring-social-bootstrap/tree/master/spring-social-bootstrap-sdk)** builds on [Spring Social](http://projects.spring.io/spring-social) by providing an opinionated foundation for building API clients
+![Bootstrap Shell](http://i.imgur.com/PypWRjx.png) | **[Bootstrap Shell](https://github.com/robinhowlett/spring-social-bootstrap/tree/master/bootstrap-shell)** is a [Spring Shell](http://docs.spring.io/spring-shell/docs/current/reference/htmlsingle/)-based framework to aid creating command-line interface (CLI) applications for API clients built on [Spring Social Bootstrap SDK](https://github.com/robinhowlett/spring-social-bootstrap/tree/master/spring-social-bootstrap-sdk)
+![HAR Mar Interceptor](http://i.imgur.com/oaqfyPi.png) | **[HAR Mar Interceptor](https://github.com/robinhowlett/spring-social-bootstrap/tree/master/har-mar-interceptor)** allows capturing HTTP request/response exchanges, persisting them in a [HAR](http://www.softwareishard.com/blog/har-12-spec/) or [ALF](https://github.com/Mashape/api-log-format)-compatible format, and re-executing those requests at a later time.
+
+[![Build Status](https://travis-ci.org/robinhowlett/spring-social-bootstrap.svg?branch=master)](https://travis-ci.org/robinhowlett/spring-social-bootstrap)

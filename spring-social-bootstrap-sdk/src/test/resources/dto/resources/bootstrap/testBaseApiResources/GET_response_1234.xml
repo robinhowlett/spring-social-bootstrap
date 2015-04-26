@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestBaseApiResource>
+	<id>1234</id>
+	<name>Sample 1</name>
+	<createDate>2014-07-01T00:00:00.000Z</createDate>
+	<active>true</active>
+</TestBaseApiResource>

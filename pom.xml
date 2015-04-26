@@ -1,0 +1,28 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	
+	<groupId>com.sportslabs.amp</groupId>
+	<artifactId>spring-social-bootstrap</artifactId>
+	<version>0-SNAPSHOT</version>
+	
+	<packaging>pom</packaging>
+	
+	<scm>
+		<connection>scm:git:git@github.com:robinhowlett/spring-social-bootstrap.git</connection>
+	</scm>
+	
+	<modules>
+		<module>spring-social-bootstrap-pom</module>
+		<module>spring-social-bootstrap-test</module>
+		<module>spring-social-bootstrap-dto</module>
+		<module>spring-social-bootstrap-settings</module>
+		<module>spring-social-bootstrap-data</module>
+		<module>har-dto</module>
+		<module>har-test</module>
+		<module>har-mar-interceptor</module>
+		<module>spring-social-bootstrap-sdk</module>
+		<module>bootstrap-shell</module>
+	</modules>
+	
+</project>

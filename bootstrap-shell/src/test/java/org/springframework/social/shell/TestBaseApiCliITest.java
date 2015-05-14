@@ -48,7 +48,7 @@ public class TestBaseApiCliITest {
 	public static void startUp() throws InterruptedException {
 		TestBaseApiCli cli = new TestBaseApiCli();
 		
-		bootstrap = new Bootstrap(cli.basePackages());
+		bootstrap = new Bootstrap(null, Bootstrap.CONTEXT_PATH, cli.basePackages());
 		
 		shell = bootstrap.getJLineShellComponent();
 	}

@@ -22,6 +22,8 @@ public class AlfHarEntry extends HarEntry implements BaseApiResource {
 	private static final long serialVersionUID = 1L;
 	
 	private final String clientIPAddress;
+	
+	private String _binId;
 
 	/**
 	 * @param startedDateTime	Date and time stamp of the request start (ISO 8601 - YYYY-MM-DDThh:mm:ss.sTZD).
@@ -63,13 +65,28 @@ public class AlfHarEntry extends HarEntry implements BaseApiResource {
 		return clientIPAddress;
 	}
 
+	/**
+	 * @return the _binId
+	 */
+	public String get_binId() {
+		return _binId;
+	}
+
+	/**
+	 * @param _binId the _binId to set
+	 */
+	public void set_binId(String _binId) {
+		this._binId = _binId;
+	}
+
 	/* (non-Javadoc)
 	 * @see java.lang.Object#toString()
 	 */
 	@Override
 	public String toString() {
-		return "AlfEntry [toString()=" + super.toString()
-				+ ", clientIPAddress=" + clientIPAddress + "]";
+		return "AlfHarEntry [toString()=" + super.toString()
+				+ ", clientIPAddress=" + clientIPAddress + ", _binId=" + _binId
+				+ "]";
 	}
 
 	/* (non-Javadoc)
@@ -79,6 +96,7 @@ public class AlfHarEntry extends HarEntry implements BaseApiResource {
 	public int hashCode() {
 		final int prime = 31;
 		int result = super.hashCode();
+		result = prime * result + ((_binId == null) ? 0 : _binId.hashCode());
 		result = prime * result
 				+ ((clientIPAddress == null) ? 0 : clientIPAddress.hashCode());
 		return result;
@@ -96,6 +114,11 @@ public class AlfHarEntry extends HarEntry implements BaseApiResource {
 		if (getClass() != obj.getClass())
 			return false;
 		AlfHarEntry other = (AlfHarEntry) obj;
+		if (_binId == null) {
+			if (other._binId != null)
+				return false;
+		} else if (!_binId.equals(other._binId))
+			return false;
 		if (clientIPAddress == null) {
 			if (other.clientIPAddress != null)
 				return false;

@@ -11,3 +11,4 @@
 !spring-social-bootstrap*
 !.travis.yml
 !deploy_key.enc
+*.iml

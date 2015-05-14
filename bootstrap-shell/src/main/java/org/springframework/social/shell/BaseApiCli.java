@@ -1,8 +1,9 @@
 /**
- * 
+ *
  */
 package org.springframework.social.shell;
 
+import org.springframework.shell.Bootstrap;
 import org.springframework.social.BaseApi;
 
 
@@ -11,11 +12,11 @@ import org.springframework.social.BaseApi;
  *
  * @author robin
  */
-public abstract class BaseApiCli {
-	
+public abstract class BaseApiCli extends Bootstrap {
+
 	/**
 	 * The packages to scan (Java configuration support)
-	 * 
+	 *
 	 * @return
 	 */
 	public abstract String[] basePackages();

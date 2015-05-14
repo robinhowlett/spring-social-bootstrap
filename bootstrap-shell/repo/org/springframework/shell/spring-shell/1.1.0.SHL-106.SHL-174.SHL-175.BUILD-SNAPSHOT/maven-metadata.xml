@@ -5,20 +5,20 @@
   <version>1.1.0.SHL-106.SHL-174.SHL-175.BUILD-SNAPSHOT</version>
   <versioning>
     <snapshot>
-      <timestamp>20150424.211855</timestamp>
-      <buildNumber>2</buildNumber>
+      <timestamp>20150514.054435</timestamp>
+      <buildNumber>3</buildNumber>
     </snapshot>
-    <lastUpdated>20150424211855</lastUpdated>
+    <lastUpdated>20150514054435</lastUpdated>
     <snapshotVersions>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>1.1.0.SHL-106.SHL-174.SHL-175.BUILD-20150424.211855-2</value>
-        <updated>20150424211855</updated>
+        <value>1.1.0.SHL-106.SHL-174.SHL-175.BUILD-20150514.054435-3</value>
+        <updated>20150514054435</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>1.1.0.SHL-106.SHL-174.SHL-175.BUILD-20150424.211855-2</value>
-        <updated>20150424211855</updated>
+        <value>1.1.0.SHL-106.SHL-174.SHL-175.BUILD-20150514.054435-3</value>
+        <updated>20150514054435</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>

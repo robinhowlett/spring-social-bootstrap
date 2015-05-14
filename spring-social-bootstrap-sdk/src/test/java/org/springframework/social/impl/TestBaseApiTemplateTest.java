@@ -99,6 +99,8 @@ import com.sportslabs.amp.har.dto.creator.HarCreator;
  * 	<li>Query operations
  * 	<li>Query builder operations
  * 	<li>Page navigation operations
+ * 	<li>HTTP Archive operations
+ * 	<li>Replay operations
  * </ul>
  *
  * @author robin

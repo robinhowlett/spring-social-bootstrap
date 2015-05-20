@@ -14,7 +14,7 @@
 		<org.springframework.boot.version>1.2.2.RELEASE</org.springframework.boot.version>
 		<org.springframework.data.commons.version>1.9.2.RELEASE</org.springframework.data.commons.version>
 		<org.springframework.security.version>3.2.5.RELEASE</org.springframework.security.version>
-		<org.springframework.shell.version>1.1.0.SHL-106.SHL-174.SHL-175.BUILD-SNAPSHOT</org.springframework.shell.version>
+		<org.springframework.shell.version>1.1.0-SHL106-SHL174-SHL175</org.springframework.shell.version>
 		<org.springframework.social.version>1.1.0.RELEASE</org.springframework.social.version>
 		
 		<com.fasterxml.jackson.version>2.4.0</com.fasterxml.jackson.version>

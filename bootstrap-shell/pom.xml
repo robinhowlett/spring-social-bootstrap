@@ -10,13 +10,30 @@
 	</parent>
 
 	<artifactId>bootstrap-shell</artifactId>
-	
+
 	<repositories>
-	    <repository>
-	        <id>project.local</id>
-	        <name>project</name>
-	        <url>file:${project.basedir}/repo</url>
-	    </repository>
+		<repository>
+			<id>s3.release</id>
+			<name>Robin's S3 Release Repository</name>
+			<url>s3://maven.robinhowlett.com/release</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>s3.snapshot</id>
+			<name>Robin's S3 Snapshot Repository</name>
+			<url>s3://maven.robinhowlett.com/snapshot</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
 	</repositories>
 	
 	<dependencies>

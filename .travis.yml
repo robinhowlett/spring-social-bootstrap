@@ -16,3 +16,4 @@ after_success:
 after_script:
 - mvn versions:commit
 - mvn -Dtag=$TRAVIS_BUILD_NUMBER scm:tag
+- mvn deploy

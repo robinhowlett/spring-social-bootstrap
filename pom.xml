@@ -1,28 +1,72 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-	<modelVersion>4.0.0</modelVersion>
-	
-	<groupId>com.sportslabs.amp</groupId>
-	<artifactId>spring-social-bootstrap</artifactId>
-	<version>0-SNAPSHOT</version>
-	
-	<packaging>pom</packaging>
-	
-	<scm>
-		<connection>scm:git:git@github.com:robinhowlett/spring-social-bootstrap.git</connection>
-	</scm>
-	
-	<modules>
-		<module>spring-social-bootstrap-pom</module>
-		<module>spring-social-bootstrap-test</module>
-		<module>spring-social-bootstrap-dto</module>
-		<module>spring-social-bootstrap-settings</module>
-		<module>spring-social-bootstrap-data</module>
-		<module>har-dto</module>
-		<module>har-test</module>
-		<module>har-mar-interceptor</module>
-		<module>spring-social-bootstrap-sdk</module>
-		<module>bootstrap-shell</module>
-	</modules>
-	
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.sportslabs.amp</groupId>
+    <artifactId>spring-social-bootstrap</artifactId>
+    <version>0-SNAPSHOT</version>
+
+    <packaging>pom</packaging>
+
+    <scm>
+        <connection>scm:git:git@github.com:robinhowlett/spring-social-bootstrap.git</connection>
+    </scm>
+
+    <distributionManagement>
+        <site>
+            <id>s3.site</id>
+            <url>s3://maven.robinhowlett.com/site</url>
+        </site>
+        <repository>
+            <id>s3.release</id>
+            <url>s3://maven.robinhowlett.com/release</url>
+        </repository>
+        <snapshotRepository>
+            <id>s3.snapshot</id>
+            <url>s3://maven.robinhowlett.com/snapshot</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <build>
+        <extensions>
+            <extension>
+                <groupId>org.kuali.maven.wagons</groupId>
+                <artifactId>maven-s3-wagon</artifactId>
+                <version>1.2.1</version>
+            </extension>
+        </extensions>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-deploy-plugin</artifactId>
+                    <version>2.8.2</version>
+                    <configuration>
+                        <deployAtEnd>true</deployAtEnd>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+    <modules>
+        <module>spring-social-bootstrap-pom</module>
+        <module>spring-social-bootstrap-test</module>
+        <module>spring-social-bootstrap-dto</module>
+        <module>spring-social-bootstrap-settings</module>
+        <module>spring-social-bootstrap-data</module>
+        <module>har-dto</module>
+        <module>har-test</module>
+        <module>har-mar-interceptor</module>
+        <module>spring-social-bootstrap-sdk</module>
+        <module>bootstrap-shell</module>
+    </modules>
+
 </project>

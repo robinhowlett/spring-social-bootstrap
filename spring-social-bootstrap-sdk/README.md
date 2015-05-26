@@ -12,12 +12,11 @@ settings = new TestBaseApiClientSettings(platformSettings, securitySettings);
 TestBaseApi testApi = new TestBaseApiTemplate(settings);
 
 // CRUD examples
-TestBaseApiResource result = testApi.testOperations().create(testBaseApiResource);
+testApi.testOperations().create(testBaseApiResource);
 
-result = testApi.testOperations().get(testBaseApiResource.getId());
+TestBaseApiResource testBaseApiResource = testApi.testOperations().get(testBaseApiResource.getId());
 
 testBaseApiResource.setName("New Name");
-
 testApi.testOperations().update(testBaseApiResource)
 
 testApi.testOperations().delete(testBaseApiResource.getId());

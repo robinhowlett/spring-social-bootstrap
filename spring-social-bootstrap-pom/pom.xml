@@ -10,7 +10,7 @@
 		<java.version>1.7</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <spring-social-bootstrap.version>0-SNAPSHOT</spring-social-bootstrap.version>
+        <spring-social-bootstrap.version>${project.version}</spring-social-bootstrap.version>
 		
 		<org.springframework.version>4.1.5.RELEASE</org.springframework.version>
 		<org.springframework.boot.version>1.2.3.RELEASE</org.springframework.boot.version>

@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.DependsOn;
 import org.springframework.social.shell.TestBaseApiCliITest.TestBaseApiCliTemplate;
 import org.springframework.social.shell.converters.json.JsonCliPrinterTypeConverter;
+import org.springframework.social.shell.converters.tables.TableCliPrinterTypeConverter;
 import org.springframework.social.shell.test_support.commands.TestBaseApiCliCRUDCommands;
 import org.springframework.social.shell.test_support.dto.TestBaseApiCliResource;
 
@@ -22,6 +23,12 @@ public class TestBaseApiCliConfig {
 	@DependsOn("api")
 	public JsonCliPrinterTypeConverter<TestBaseApiCliResource> jsonOutputConverter() {
 		return new JsonCliPrinterTypeConverter<TestBaseApiCliResource>(api().getObjectMapper());
+	}
+
+	@Bean
+	@DependsOn("api")
+	public TableCliPrinterTypeConverter tableOutputConverter() {
+		return new TableCliPrinterTypeConverter();
 	}
 	
 }

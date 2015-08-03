@@ -47,4 +47,6 @@ public class JsonCliPrinterTypeConverter<S extends BaseApiResource> implements C
 		return mapper;
 	}
 
+	@Override
+	public void setParameters(String parameters) { }
 }

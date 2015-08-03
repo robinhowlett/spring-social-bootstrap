@@ -28,6 +28,13 @@
 			<artifactId>spring-social-bootstrap-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- ASCII -->
+		<dependency>
+			<groupId>com.bethecoder</groupId>
+			<artifactId>java-ascii-table</artifactId>
+			<version>1.0</version>
+		</dependency>
 	</dependencies>
 	
 	<build>

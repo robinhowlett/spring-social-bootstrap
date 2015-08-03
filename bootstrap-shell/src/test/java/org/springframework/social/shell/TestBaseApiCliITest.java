@@ -198,6 +198,17 @@ public class TestBaseApiCliITest {
 		
 		assertThat(result, equalTo(expected));	
 	}
+
+	@Test
+	public void testGet_WithTableOutput() throws JsonProcessingException {
+		String expected = "1";
+
+		CommandResult cr = getShell().executeCommand("api gwco --id 1234 --p table({#;ID}|{{uid}})");
+
+		String result = cr.getResult().toString();
+
+		assertThat(result, equalTo(expected));
+	}
 	
 	public static class TestBaseApiCliTemplate extends AbstractBaseApiTemplate {
 
